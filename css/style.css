@@ -10,36 +10,54 @@
 /* ----------
     COMMON
 ---------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .container {
     max-width: 1200px;
     margin: auto;
 }
-
+header {
+    color: white;
+}
+/* ----------
+    BUTTONS
+---------- */
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.btn-black {
+    color: white;
+    background-color: #23272a;
+}
 /* ----------
     DEBUG
 ---------- */
 .debug .header-top {
     padding: 10px 0;
-    background-color: #add8e6;
+    /* background-color: #add8e6; */
 }
-.debug .header-row {
+/* .debug .header-row {
     background-color: #daa520;
     /* border: dotted 2px black; */
-}
+} */
 .debug .col-link {
     border-left: 2px dotted black;
     border-right: 2px dotted black;
 }
-.debug .header-bottom {
+/* .debug .header-bottom {
     height: 500px;
-    background-color: #00008b;
-}
-.debug .hero {
-    height: 400px;
-    max-width: 900px;   /*max-width così lo rendo responsive*/
-    background-color: #ee82ee;
-    border: dotted 2px black;
-}
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+} */
+/* .debug .hero { */
+    /* height: 400px; */
+    /* max-width: 900px;   max-width così lo rendo responsive */
+    /* background-color: #ee82ee; */
+    /* border: dotted 2px black; */
+/* } */
 .debug section:nth-child(2n) {
     background-color: #d3d3d3;
 }
@@ -88,34 +106,61 @@
 /* ----------
     HEADER 
 ---------- */
+.header-top {
+    background-color: #255EE9;
+}
 .header-row {
     display: flex;
+    align-items: center;
     padding: 3px 5px;
     border: 2px dotted black;
 }
 .col-logo {
-    width: 15%;
+    width: 20%;
+}
+.col-logo i {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+.col-logo i strong {
+    font-size: 16px;
+    margin-left: 3px;
 }
 .col-link {
-    width: 70%;
+    width: 60%;
     text-align: center;
 }
 .col-link ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
 }
 .col-link ul a {
     text-decoration: none;
-    color: inherit;
-    margin: 0 5px;;  
+    color: inherit; 
 }
 .col-login {
-    width: 15%;
+    width: 20%;
     text-align: right;
 }
 .header-bottom {
     padding: 50px 0;
+    height: 500px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+.hero {
+    max-width: 900px;
+    text-align: center;
+    padding: 150px 20px 50px;
+}
+.hero h1 {
+    font-size: 40px;
+}
+.hero p {
+    padding: 40px 0 20px;
+    font-size: 18px;
 }
 
 /* ----------
