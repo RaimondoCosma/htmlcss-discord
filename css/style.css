@@ -46,18 +46,17 @@ section:nth-child(2n)::after {
 /* ----------
     DEBUG
 ---------- */
-.debug .header-top {
+/* .debug .header-top {
     padding: 10px 0;
-    /* background-color: #add8e6; */
-}
+    /* background-color: #add8e6; 
+} */
 /* .debug .header-row {
     background-color: #daa520;
     /* border: dotted 2px black; */
-} */
-.debug .col-link {
+/* .debug .col-link {
     border-left: 2px dotted black;
     border-right: 2px dotted black;
-}
+} */
 /* .debug .header-bottom {
     height: 500px;
     background-image: url(../img/jumbo.png);
@@ -72,9 +71,9 @@ section:nth-child(2n)::after {
 /* .debug section:nth-child(2n) {
     background-color: #d3d3d3;
 } */
-.debug .main-row {
+/* .debug .main-row {
     height: 600px;
-}
+} */
 /* .debug .col-image {
     background-color: #1e90ff;
     border: dotted 2px black;
@@ -90,23 +89,23 @@ section:nth-child(2n)::after {
     background-color: #228b22;
     border: dotted 2px black;
 } */
-.debug .pre-footer {
+/* /* .debug .pre-footer {
     height: 600px;
-    background-color: #23272a;
-}
-.debug .col-foot-small {
+    background-color: #23272a; 
+} 
+/* .debug .col-foot-small {
     background-color: #f08080;
-}
-.debug .col-foot-big {
+} */
+/* .debug .col-foot-big {
     background-color: #20b2aa;
-}
+} */
 .debug .main-footer {
     height: 100px;
     background-color: #23272a;
 }
-.debug .mini-col-foot {
+/* .debug .mini-col-foot {
     border: dotted 2px white;
-}
+} */
 .debug .row-main-footer {
     background-color: #7fffd4;
 }
@@ -124,7 +123,6 @@ section:nth-child(2n)::after {
     display: flex;
     align-items: center;
     padding: 3px 5px;
-    border: 2px dotted black;
 }
 .col-logo {
     width: 20%;
@@ -220,13 +218,31 @@ section:nth-child(2n)::after {
 /* ----------
     FOOTER 
 ---------- */
+.pre-footer {
+    background-color: #23272a;
+}
 .pre-footer-row {
     display: flex;
     height: 100%;
-    padding: 10px 0 50px;
+    padding: 80px 0 50px;
 }
 .col-foot-small {
+    color: white;
     width: 30%;
+}
+.col-foot-small .nazione {
+    padding: 20px 0;
+}
+.col-foot-small h4 {
+    font-size: 36px;
+    color: #7289DA;
+}
+.col-foot-small img {
+    width: 20px;
+}
+.contatti a{
+    color: white;
+    padding: 0 10px;
 }
 .col-foot-big {
     display: flex;
@@ -234,6 +250,19 @@ section:nth-child(2n)::after {
 }
 .mini-col-foot {
     width: 25%;
+}
+.col-foot-big h5 {
+    font-size: 16px;
+    color: #7289DA;
+    padding-bottom: 10px;
+}
+.col-foot-big .mini-col-foot ul {
+    list-style: none;
+    color: white;
+}
+.col-foot-big .mini-col-foot ul li {
+    cursor: pointer;
+    padding: 10px 0;
 }
 .main-footer {
     margin-top: 1px;
