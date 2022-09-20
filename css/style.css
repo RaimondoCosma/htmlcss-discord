@@ -64,14 +64,14 @@ header {
 .debug .main-row {
     height: 600px;
 }
-.debug .col-image {
+/* .debug .col-image {
     background-color: #1e90ff;
     border: dotted 2px black;
 }
 .debug .col-text {
     background-color: #ffc0cb;
     border: dotted 2px black;
-}
+} */
 .debug .last-row {
     height: 1000px;
 }
@@ -173,8 +173,18 @@ header {
 .col-image {
     width: 60%;
 }
+.col-image img {
+    width: 100%;
+}
 .col-text {
+    padding: 40px 50px;
     width: 40%;
+}
+.col-text h2 {
+    font-size: 40px;
+}
+.col-text p {
+    padding: 40px 0;
 }
 .last-row {
     display: flex;
