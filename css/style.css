@@ -30,10 +30,24 @@ section:nth-child(2n)::before {
     position: relative;
     bottom: 5px;
 }
-section:nth-child(2n)::after {
+section:nth-child(2n):not(section:nth-child(4))::after {
     content: url(../img/wave.svg);
     position: relative;
     top: 5px;
+}
+.col-logo {
+    width: 20%;
+}
+.col-logo a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+.col-logo a strong {
+    font-size: 24px;
+    margin-left: 3px;
 }
 /* ----------
     BUTTONS
@@ -58,23 +72,12 @@ section:nth-child(2n)::after {
 ---------- */
 .header-top {
     background-color: #255EE9;
+    padding-top: 20px;
 }
 .header-row {
     display: flex;
     align-items: center;
     padding: 3px 5px;
-}
-.col-logo {
-    width: 20%;
-}
-.col-logo i {
-    display: flex;
-    align-items: center;
-    font-size: 32px;
-}
-.col-logo i strong {
-    font-size: 16px;
-    margin-left: 3px;
 }
 .col-link {
     width: 60%;
@@ -170,12 +173,12 @@ section:nth-child(2n)::after {
     color: white;
     width: 30%;
 }
-.col-foot-small .nazione {
-    padding: 20px 0;
-}
 .col-foot-small h4 {
     font-size: 36px;
     color: #7289DA;
+}
+.col-foot-small .nazione {
+    padding: 20px 0;
 }
 .col-foot-small img {
     width: 20px;
