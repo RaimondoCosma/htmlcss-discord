@@ -20,6 +20,12 @@ body {
 header {
     color: white;
 }
+section:nth-child(2n) {
+    background-color: #F6F6F6;
+}
+section:nth-child(2n)::after {
+    content: url(../img/wave.svg);
+}
 /* ----------
     BUTTONS
 ---------- */
@@ -58,9 +64,9 @@ header {
     /* background-color: #ee82ee; */
     /* border: dotted 2px black; */
 /* } */
-.debug section:nth-child(2n) {
+/* .debug section:nth-child(2n) {
     background-color: #d3d3d3;
-}
+} */
 .debug .main-row {
     height: 600px;
 }
@@ -147,7 +153,7 @@ header {
 .header-bottom {
     padding: 50px 0;
     height: 500px;
-    background-image: url(../img/jumbo.png);
+    background-image: url('../img/jumbo.png');
     background-size: cover;
 }
 .hero {
@@ -185,9 +191,11 @@ header {
 }
 .col-text p {
     padding: 40px 0;
+    font-size: 18px;
 }
 .last-row {
-    display: flex;
+    text-align: center;
+    /* display: flex; */
     padding: 50px 0;
 }
 .last-section {
