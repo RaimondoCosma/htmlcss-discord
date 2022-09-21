@@ -12,6 +12,7 @@
 ---------- */
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 .container {
     max-width: 1200px;
@@ -26,14 +27,14 @@ section:nth-child(2n) {
 section:nth-child(2n)::before {
     content: url('../img/wave.svg');
     display: block;
-    transform: rotate(180deg);
+    transform: rotateX(180deg);
     position: relative;
-    bottom: 5px;
+    bottom: 8px;
 }
-section:nth-child(2n):not(section:nth-child(4))::after {
-    content: url(../img/wave.svg);
+section:nth-child(2n):not(:last-child)::after {
+    content: url('../img/wave.svg');
     position: relative;
-    top: 5px;
+    top: 8px;
 }
 .col-logo {
     width: 20%;
@@ -108,9 +109,9 @@ section:nth-child(2n):not(section:nth-child(4))::after {
 }
 .header-bottom {
     padding: 50px 0;
-    height: 600px;
     background-image: url('../img/jumbo.png');
     background-size: cover;
+    background-position: center;
 }
 .hero {
     max-width: 900px;
@@ -126,6 +127,7 @@ section:nth-child(2n):not(section:nth-child(4))::after {
 }
 .hero button {
     font-size: 20px;
+    margin: 0 10px;
 }
 .hero button:hover {
     font-size: 24px;
