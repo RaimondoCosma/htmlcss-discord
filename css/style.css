@@ -45,9 +45,10 @@ section:nth-child(2n):not(:last-child)::after {
     display: flex;
     align-items: center;
     font-size: 32px;
+    transition: transform 0.4s;
 }
 .col-logo a:hover {
-    font-size: 40px;
+    transform: scale(1.2);
 }
 .col-logo a strong {
     font-size: 24px;
@@ -62,9 +63,11 @@ section:nth-child(2n):not(:last-child)::after {
     border-radius: 20px;
     padding: 10px 15px;
     cursor: pointer;
+    background-color: white;
+    transition: transform 0.4s;
 }
 .btn:hover {
-    font-size: 16px;
+    transform: scale(1.2);
 }
 .btn-black {
     color: white;
@@ -81,11 +84,16 @@ section:nth-child(2n):not(:last-child)::after {
 .header-top {
     background-color: #255EE9;
     padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 .header-row {
     display: flex;
     align-items: center;
-    padding: 3px 5px;
+    padding: 3px 5px 10px;
 }
 .col-link {
     width: 60%;
@@ -98,10 +106,13 @@ section:nth-child(2n):not(:last-child)::after {
 }
 .col-link ul li a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
-.col-link ul li a:hover {
-    font-size: 18px;
+.col-link ul li {
+    transition: transform 0.4s; 
+}
+.col-link ul li:hover {
+    transform: scale(1.2);
 }
 .col-login {
     width: 20%;
@@ -128,9 +139,6 @@ section:nth-child(2n):not(:last-child)::after {
 .hero button {
     font-size: 20px;
     margin: 0 10px;
-}
-.hero button:hover {
-    font-size: 24px;
 }
 
 /* ----------
@@ -205,8 +213,11 @@ section:nth-child(2n):not(:last-child)::after {
     color: white;
     padding: 0 10px;
 }
+.contatti a i{
+    transition: transform 0.4s;
+}
 .contatti a i:hover {
-    font-size: 20px;
+    transform: scale(1.4);
 }
 .col-foot-big {
     display: flex;
@@ -227,9 +238,10 @@ section:nth-child(2n):not(:last-child)::after {
 .col-foot-big .mini-col-foot ul li {
     cursor: pointer;
     padding: 10px 0;
+    transition: transform 0.4s;
 }
 .col-foot-big .mini-col-foot ul li:hover {
-    font-size: 18px;
+    transform: scale(1.1);
 }
 .main-footer {
     background-color: #23272a;
@@ -245,4 +257,38 @@ section:nth-child(2n):not(:last-child)::after {
 }
 .row-main-footer .col-logo {
     color: white;
+}
+
+
+/* -----------
+    KEYFRAMES
+----------- */
+.main-row > .col-image {
+    animation: bouncing 1.5s infinite alternate;
+    animation-timing-function: cubic-bezier(.58,.13,.4,.99);
+}
+
+@keyframes bouncing {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(100);
+    }
+
+}
+
+.last-section > img {
+    animation: waving 1.7s infinite alternate;
+    animation-timing-function: cubic-bezier(.58,.13,.4,.99);
+}
+
+@keyframes waving {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(50);
+    }
+
 }
