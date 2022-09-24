@@ -270,10 +270,10 @@ section:nth-child(2n):not(:last-child)::after {
 
 @keyframes bouncing {
     from {
-        transform: translateY(-50px);
+        transform: translateY(-6%);
     }
     to {
-        transform: translateY(100);
+        transform: translateY(10%);
     }
 
 }
@@ -285,10 +285,10 @@ section:nth-child(2n):not(:last-child)::after {
 
 @keyframes waving {
     from {
-        transform: translateX(-50px);
+        transform: translateX(-3%);
     }
     to {
-        transform: translateX(50);
+        transform: translateX(3%);
     }
 
 }
